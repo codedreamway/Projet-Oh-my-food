@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    max-width: 640px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* customize header */
+
+.header_bloc--logo{
+    display: flex;
+    justify-content: center;
+    padding-top :15px; 
+    padding-bottom: 15px;
+}
+.header_bloc--logo img{
+    width: 50%;
+    object-fit: cover;
+}
+.header_bloc--location{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #EAEAEA;
+    padding:  15px 0;
+
+}
+
+/*_____customize main____*/
+
+/* Premier bloc customize */
+
+.main_firstbloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 25px 0;
+    gap: 25px;
+    background: #F7F7F7;
+}
+.main_firstbloc h1,p{
+    text-align: center;
+}
+.main_firstbloc p{
+    color:#353535;
+}
+.main_firstbloc--button{
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    color:white;
+    border: none;
+}
+
+/* bloc de fonctionnement */
+
+.main_blocfuntioning{
+    display: flex;
+    flex-direction: column;
+}
+.main_blocfunctioning__containfunction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_blocfunctioning__containfunction--function{
+    border: black solid;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    background: #F5EDFF;
+    
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+
+}
+.numberfuction{
+    border-radius: 50% 50% 50% 50%;
+    background-color: #9356DC;
+    padding: 2px;
+    width: 9%;
+    text-align: center;
+    color: white;
+}
+
+section img{
+    width: 100%;
+    display: block;
+
+}
