@@ -163,7 +163,7 @@ body{
 .blocfunctioning__containfunction--function:hover {
     background:#F5EDFF;
 }
-.blocfunctioning__containfunction--function i:hover{
+.blocfunctioning__containfunction--function:hover > i{
     color:#9356DC;
 }
 
