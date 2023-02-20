@@ -390,14 +390,15 @@ footer a{
     border-radius: 15px;
     gap: 1%;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     
   }
   .container:active > .check {
     display: block;
     display: grid;
     place-items: center;
-    cursor: pointer;
     animation: appear 500ms;
+    width: 20vw;
   }
   
   .box {
@@ -414,7 +415,22 @@ footer a{
   .description-price {
     display: flex;
     justify-content: space-between;
+    gap: 10%;
   }
+ 
+ .container:active .tree{
+       overflow: hidden;
+       white-space: nowrap;
+       text-overflow: ellipsis;
+  }
+
+  .tree{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+  
   
   .check {
     width: 18vw;
@@ -591,6 +607,14 @@ footer a{
         width:  60%;
         font-size: medium;
     }
+
+    .container:hover > .check {
+        display: block;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        animation: appear 500ms;
+      }
     .bloc--titre {
         justify-content: space-evenly;
     }
