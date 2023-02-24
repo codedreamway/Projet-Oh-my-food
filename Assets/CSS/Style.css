@@ -397,8 +397,10 @@ footer a{
     display: block;
     display: grid;
     place-items: center;
-    animation: appear 500ms;
+    animation: appear 200ms ease-in-out;
     width: 20vw;
+    transition: all 100ms ;
+
   }
   
   .box {
@@ -442,24 +444,33 @@ footer a{
     align-items: center;
     justify-content: center;
     display: none;
+    transition: all 1s;
+
 }
 
 
 @keyframes appear {
-    from{
+    0%{
         transform: translateX(10px);
         transform-origin: 0% 50%;
         opacity: 0;
     }
-    to{
-        transform: translateX(0);
+   50%{
+        transform: translateX(0px);
         opacity: 1;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+      
+   } 
+    100%{
+        
     }
 }
+
   
   .fa-circle-check {
     font-size: 20px;
-    animation: rotate-icon  500ms ease-in-out both;
+    animation: rotate-icon  500ms ease-in-out ;
   }
   
   @keyframes rotate-icon {
