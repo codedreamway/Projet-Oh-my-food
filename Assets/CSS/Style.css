@@ -444,8 +444,7 @@ footer a{
     align-items: center;
     justify-content: center;
     display: none;
-    transition: all 1s;
-
+    animation: appear 1s infinite;
 }
 
 
@@ -455,16 +454,10 @@ footer a{
         transform-origin: 0% 50%;
         opacity: 0;
     }
-   50%{
+   100%{
         transform: translateX(0px);
         opacity: 1;
-        transition-duration: 1s;
-        transition-timing-function: ease-in-out;
-      
-   } 
-    100%{
-        
-    }
+   }   
 }
 
   
